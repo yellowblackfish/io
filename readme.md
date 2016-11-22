@@ -1,1 +1,2 @@
-yellowblackfish.io / ybf.io repo v2
+# ybf
+yellowblackfish.io Hugo devmode
