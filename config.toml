@@ -1,0 +1,82 @@
+baseurl = "http://yellowblackfish.io/"
+languageCode = "en-us"
+title = "Yellow Blackfish"
+theme = "ybf-material"
+metadataformat = "yaml"
+canonifyurls = true
+# Enable Google Analytics by entering your tracking id
+googleAnalytics = ""
+
+[params]
+	# General information
+	author = "Digitalcraftsman"
+	description = "A material design theme for documentations."
+	copyright = "Released under the MIT license"
+
+	# Repository
+	provider = ""
+	repo_url = "http://localhost:1313/"
+
+	version = ""
+	logo = "images/logo.png"
+	favicon = ""
+
+	permalink = "#"
+
+	# Custom assets
+	custom_css = ["/sass/styles.min.css"]
+	custom_js  = ["/js/"]
+
+	# Syntax highlighting theme
+	highlight_css  = ""
+
+#	[params.palette]
+#    	primary = "red"
+#    	accent  = "teal"
+
+    [params.font]
+    	text = "Roboto"
+    	code = "Ubuntu Mono"
+
+
+[social]
+	twitter = ""
+	github  = "digitalcraftsman"
+	email   = "hello@email.com"
+
+# [[menu.main]]
+#	name   = "Home"
+#	url    = "/"
+#	weight = 0
+
+[[menu.main]]
+	name   = "Captains"
+	url    = "captains/"
+	weight = 10
+
+[[menu.main]]
+	name   = "Weapons"
+	url    = "weapons/"
+	weight = 20
+
+[[menu.main]]
+	name   = "Riches"
+	url    = "riches/"
+	weight = 30
+
+[[menu.main]]
+	name   = "Journals"
+	url    = "journals/"
+	weight = 40
+
+[[menu.main]]
+	name   = "Ahoy"
+	url    = "ahoy/"
+	weight = 50
+
+
+[blackfriday]
+	smartypants	= true
+	fractions = true
+	smartDashes = true
+	plainIDAnchors = true
