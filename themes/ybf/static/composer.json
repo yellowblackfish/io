@@ -1,6 +1,0 @@
-{
-    "name": "yellowblackfish/ybf",
-    "require": {
-        "twbs/bootstrap": "v4.0.0-alpha.5"
-    }
-}

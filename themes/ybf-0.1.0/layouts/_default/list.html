@@ -1,0 +1,27 @@
+{{ partial "head" . }}
+
+<main id="panel" class="slideout-panel">
+	<div class="container">
+			<h1>Pages in {{ .Title | singularize }}</h1>
+
+			{{ range .Data.Pages }}
+			<a href="{{ .Permalink }}" title="{{ .Title }}">
+				<h2>{{ .Title }}</h2>
+			</a>
+
+			<br>
+			{{ printf "%s" .Summary | markdownify }}
+
+			<hr>
+			{{ end }}
+
+		</div>
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				{{ partial "footer" . }}
+			</div>
+		</footer>
+	</main>
+
+{{ partial "footer_js" . }}

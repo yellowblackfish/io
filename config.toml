@@ -1,7 +1,7 @@
 baseurl = "http://yellowblackfish.io/"
 languageCode = "en-us"
 title = "Yellow Blackfish"
-theme = "ybf-material"
+theme = "ybf-0.1.0"
 metadataformat = "yaml"
 canonifyurls = true
 # Enable Google Analytics by entering your tracking id
@@ -9,13 +9,13 @@ googleAnalytics = ""
 
 [params]
 	# General information
-	author = "Digitalcraftsman"
-	description = "A material design theme for documentations."
-	copyright = "Released under the MIT license"
+	author = "William Pansky"
+	description = "A voyage into the unknown."
+	copyright = "Released under the MIT license."
 
 	# Repository
 	provider = ""
-	repo_url = "http://localhost:1313/"
+	repo_url = ""
 
 	version = ""
 	logo = "images/logo.png"

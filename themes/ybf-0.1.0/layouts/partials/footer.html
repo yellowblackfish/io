@@ -1,0 +1,17 @@
+<h2>
+  {{ .Site.Title }}
+</h2>
+
+<ul class="footer-nav">
+  {{ partial "nav" . }}
+</ul>
+
+<!-- liscense shortcode {{ . }} -->
+
+ <aside class="copyright" role="note">
+   {{ with .Site.Params.copyright }}
+   &copy; {{ $.Now.Format "2006" }} Yellow Blackfish &ndash;
+   {{ end }}
+   Powered by
+   <a href="https://www.gohugo.io" target="_blank">Hugo</a>.
+ </aside>
