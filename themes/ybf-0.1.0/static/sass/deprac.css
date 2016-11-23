@@ -1,0 +1,35 @@
+/* ----------------------------------------------------- */
+/* ## FOOTER - Social */
+/* ----------------------------------------------------- */
+.footerSocial {
+	margin-bottom: 1em;
+}
+img.footerSocial {
+	max-width: 1.5em;
+}
+.footer ul {
+	margin: 0;
+	padding: 0;
+}
+.footer ul li {
+	display: inline-block;
+	margin: 0 10px;
+}
+.footerSocial ul li.delay1 { // 1
+	animation-delay: 200ms;
+}
+.footerSocial ul li.delay2 { // 2
+	animation-delay: 300ms;
+}
+.footerSocial ul li.delay3 { // 3
+	animation-delay: 400ms;
+}
+.footerSocial ul li.delay4 { // 4
+	animation-delay: 500ms;
+}
+.footerSocial ul li.delay5 { // 5
+	animation-delay: 600ms;
+}
+.footerSocial ul li.delay6 { // 6
+	animation-delay: 700ms;
+}

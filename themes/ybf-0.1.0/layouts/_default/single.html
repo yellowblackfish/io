@@ -1,0 +1,15 @@
+{{ partial "head" . }}
+
+<main id="panel" class="slideout-panel">
+	<div class="container">
+		<h1>{{ .Title }} {{ if .IsDraft }} (Draft){{ end }}</h1> {{ .Content }}
+	</div>
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			{{ partial "footer" . }}
+		</div>
+	</footer>
+</main>
+
+{{ partial "footer_js" . }}

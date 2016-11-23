@@ -1,9 +1,20 @@
 # Changelog
 
+## 20161123 10:23AM
+#### Added ybf-0.1.0 theme to develop repo
+- Commited ybf-0.1.0 to dev repo branch.
+- Starting to understand Git macOS app.
+- "Commit to [branch]" means that you're adding the changes to the branch.
+- "Sync" to remote sets up the branch to push to the repo.
+
+---
+
 ## 20161123 10:15AM
 #### Fixing repo
 - Deleted ybf-material and ybf(undefined theme ver) in favor of cleaning Git repo.
 - Still trying to fully understand the Git workflow and dev cycle.
+
+---
 
 ## 20161122 7:55PM
 ##### Overhaul for Slideout.js

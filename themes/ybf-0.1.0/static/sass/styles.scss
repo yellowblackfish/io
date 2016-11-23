@@ -1,0 +1,555 @@
+/*
+Name: Yellow Blackfish
+URL: http://yellowblackfish.com
+Description: Powered by Hugo. Boosted with Bootstrap 3.
+Author: William Pansky
+Author URL: http://williampansky.com
+Version: 1.0
+Pre: Written in style with SASS.
+Note: Based on the Material theme (http://github.com/digitalcraftsman/hugo-material-docs).
+*/
+
+/* ----------------------------------------------------- */
+/* # IMPORTS */
+/* ----------------------------------------------------- */
+/* ## IMPORTS - Fonts */
+/* ----------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Tillana:400,600');
+// DEFINITIONS
+// ## DEFINITIONS - Colors
+$yellow: #fcde07;
+$purple: #2e07fc;
+$black: #000000;
+$black1: #303030;
+$black2: #505050;
+$gray: #888888;
+$lightgray: #d0d0d0;
+$white: #ffffff;
+$offwhite: #fdfdfd;
+// ## DEFINITIONS - Typography
+$raleway: Raleway, Georgia, "Times New Roman", Times, serif;
+$pirate: Tillana, Raleway, Georgia, "Times New Roman", Times, serif;
+$roboto: Roboto, "Arial", Helvetica, Geneva, sans-serif;
+// ## DEFINITIONS - @Media Breaks
+$tablet: "screen and (min-width : 768px)";
+$desktop: "screen and (min-width : 960px)";
+$widescreen: "screen and (min-width : 1200px)";
+// ## DEFINITIONS - Content (.article) Prefix
+
+
+/* ----------------------------------------------------- */
+/* # GLBOAL */
+/* ----------------------------------------------------- */
+a:hover {
+	text-decoration: none;
+}
+/* ----------------------------------------------------- */
+/* # SLIDEOUT MENU - slideout.js
+Source: https://mango.github.io/slideout/ */
+/* ----------------------------------------------------- */
+body {
+  width: 100%;
+  height: 100%;
+}
+.slideout-menu {
+	background: $black1;
+	position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 256px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+}
+.menu-header {
+	width: 256px;
+	background: $yellow;
+}
+.menu-header img {
+	margin-bottom: -0.6px;
+}
+.slideout-menu ul {
+	padding: 5px;
+	margin: 5px;
+}
+.slideout-menu li {
+	list-style-type: none;
+	padding: 10px;
+	margin: 10px;
+}
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+	background: $offwhite;
+}
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+.slideout-open .slideout-menu {
+  display: block;
+}
+.slideout-menu a {
+	text-decoration: none;
+	border-bottom: 0;
+	display: block;
+	position: inherit;
+	color: $yellow;
+}
+.slideout-menu a:hover, a:focus, a:active {
+	color: $white;
+}
+/* ----------------------------------------------------- */
+/* # HEADER */
+/* ----------------------------------------------------- */
+/* ## HEADER - Styles */
+/* ----------------------------------------------------- */
+
+/* ----------------------------------------------------- */
+/* ## HEADER - Brand */
+/* ----------------------------------------------------- */
+
+/* ----------------------------------------------------- */
+/* ## HEADER - Nav */
+/* ----------------------------------------------------- */
+
+/* ----------------------------------------------------- */
+/* ## HEADER - Mobile Button */
+/* ----------------------------------------------------- */
+
+/* ----------------------------------------------------- */
+/* # TYPE */
+/* ----------------------------------------------------- */
+/* ## TYPE - Body Copy */
+/* ----------------------------------------------------- */
+p {
+	font-weight: 300;
+	color: $gray;
+	font-family: $roboto;
+	font-size: 1.4em;
+	line-height: 1.6em;
+	letter-spacing: -0.2px;
+}
+/* ----------------------------------------------------- */
+/* ## TYPE - Code/Pre */
+/* ----------------------------------------------------- */
+pre {
+	font-size: 1.2em;
+}
+/* ----------------------------------------------------- */
+/* ## TYPE - HEADINGS */
+/* ----------------------------------------------------- */
+/* ### TYPE - HEADINGS - h1 */
+/* ----------------------------------------------------- */
+h1 {
+	font: 300 7em/1em $pirate;
+	color: $black2;
+	padding: 25px 0 20px;
+}
+/* ----------------------------------------------------- */
+/* ### TYPE - HEADINGS - h2 */
+/* ----------------------------------------------------- */
+h2 {
+	font: 300 4em/1em $raleway;
+	color: $black2;
+	padding-top: 30px;
+}
+
+/* ----------------------------------------------------- */
+/* ### TYPE - HEADINGS - h3 */
+/* ----------------------------------------------------- */
+h3 {
+	font: 400 2.5em/1em $raleway;
+	padding-top: 30px;
+}
+
+/* ----------------------------------------------------- */
+/* ### TYPE - HEADINGS - h4 */
+/* ----------------------------------------------------- */
+h4 {
+	font: 400 2em/1em $raleway;
+}
+/* ----------------------------------------------------- */
+/* ### TYPE - HEADINGS - h5 */
+/* ----------------------------------------------------- */
+h5 {
+	font: 300 1.5em/1em $raleway;
+}
+/* ----------------------------------------------------- */
+/* ## TYPE - Block Quotes */
+/* ----------------------------------------------------- */
+blockquote {
+	margin: 40px 0 0 0;
+	padding: 0 30px 0 30px;
+	border-right: 25px solid;
+	text-align: right;
+	border-left: none;
+}
+blockquote p {
+	color: $gray;
+	font-size: 1.5em;
+}
+/* ----------------------------------------------------- */
+/* ## TYPE - Strong / Bold */
+/* ----------------------------------------------------- */
+strong {
+	color: #696969;
+}
+/* ----------------------------------------------------- */
+/* # LINKS */
+/* ----------------------------------------------------- */
+/* ## <a> Link Styles */
+/* ----------------------------------------------------- */
+a, a:hover, p a, p a:hover, a {
+	transition: color ease 300ms; /* Transition */
+	-moz-transition: color ease 300ms; /* Transition - Firefox 4 */
+	-webkit-transition: color ease 300ms; /* Transition - Safari & Chrome */
+	-o-transition: color ease 300ms; /* Transition - Opera */
+	-ms-transition: color ease 300ms; /* Transition - IE9? */
+}
+/* ----------------------------------------------------- */
+/* ## <p> Link Styles */
+/* ----------------------------------------------------- */
+a {
+	border-bottom: 0;
+	color: $gray;
+}
+a:hover {
+	color: $black;
+	border-bottom: 0;
+}
+/* ----------------------------------------------------- */
+/* # BUTTONS */
+/* ----------------------------------------------------- */
+/* ## ybfButton01 */
+/* ----------------------------------------------------- */
+
+/* ----------------------------------------------------- */
+/* # ANIMATIONS */
+/* ----------------------------------------------------- */
+/* ## ANIMATIONS - Fade-In one, two, three */
+/* ----------------------------------------------------- */
+@-webkit-keyframes fadeIn {
+/* make keyframes that tell the start state and the end state of our object */
+	from {
+ 		opacity:0;
+	}
+	to {
+ 		opacity:1;
+	}
+}
+ @-moz-keyframes fadeIn {
+ 	from {
+ 		opacity:0;
+	}
+ 	to {
+ 		opacity:1;
+	}
+}
+ @keyframes fadeIn {
+	from {
+ 		opacity:0;
+	}
+ 		to {
+ 	opacity:1;
+	}
+}
+.fade-in {
+	opacity: 0; // Make things invisible upon start
+	// Call our keyframe fadeIn, use animattion ease-in and repeat it only 1 time
+	-webkit-animation: fadeIn ease-in 1;
+	-moz-animation: fadeIn ease-in 1;
+	animation: fadeIn ease-in 1;
+	// This makes sure that after animation is done we remain at the last keyframe value (opacity: 1)
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	// Animation duration
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	animation-duration: 1s;
+}
+.fade-in.one { // <div class="fade-in one">
+	-webkit-animation-delay: 0.7s;
+	-moz-animation-delay: 0.7s;
+	animation-delay: 0.7s;
+}
+.fade-in.two { // <div class="fade-in two">
+	-webkit-animation-delay: 1.2s;
+	-moz-animation-delay: 1.2s;
+	animation-delay: 1.2s;
+}
+.fade-in.three { // <div class="fade-in three">
+	-webkit-animation-delay: 1.6s;
+	-moz-animation-delay: 1.6s;
+	animation-delay: 1.6s;
+}
+/* ----------------------------------------------------- */
+/* ## ANIMATIONS - CSS Sliding Underline
+Source: http://bradsknutson.com/blog/css-sliding-underline */
+/* ----------------------------------------------------- */
+a {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 0;
+}
+a:before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 1px;
+	width: 100%;
+	transition: width 0s ease;
+}
+a:after {
+	content: '';
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 1px;
+	width: 100%;
+	background: $purple;
+	transition: width .5s ease;
+}
+a:hover:before {
+	width: 0%;
+	background: $purple;
+	transition: width .5s ease;
+}
+a:hover:after {
+	width: 0%;
+	background: transparent;
+	transition: width 0s ease;
+}
+/* ----------------------------------------------------- */
+/* # SPECIALS */
+/* ----------------------------------------------------- */
+/* ## SPECIALS - jumboblock */
+/* ----------------------------------------------------- */
+.jumboblock {
+	vertical-align: middle;
+	padding: 30% 20% 65% 20%;
+}
+.jumbotron .jumbocolor {
+	background: rgba(46,7,252,0.5);
+	height: 100%;
+}
+.jumboblock h1 {
+	color: #fff;
+	text-align: center;
+	font-family: $pirate;
+	font-weight: 500;
+}
+.jumboblock h2 {
+	font-size: 2em;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 30px
+}
+.jumboblock p {
+	color: #fff;
+	margin: 20px auto 8px auto;
+	text-align: center;
+}
+.jumbotron {
+	padding: 0;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+	z-index: -99;
+	border-radius: 0;
+}
+
+/* ----------------------------------------------------- */
+/* ## SPECIALS - infoBlock */
+/* ----------------------------------------------------- */
+.infoBlock {
+	text-align: center;
+}
+/* ----------------------------------------------------- */
+/* # PAGES */
+/* ----------------------------------------------------- */
+/* ## PAGES - Ahoy Contact Form */
+/* ----------------------------------------------------- */
+.ahoy {
+	width: 100%;
+}
+.ahoy input, textarea {
+	transition: ease 300ms; /* Transition */
+	-moz-transition: ease 300ms; /* Transition - Firefox 4 */
+	-webkit-transition: ease 300ms; /* Transition - Safari & Chrome */
+	-o-transition: ease 300ms; /* Transition - Opera */
+	-ms-transition: ease 300ms; /* Transition - IE9? */
+}
+// .ahoy input#submit {
+// 	font-size: 2em;
+// 	text-align: center;
+// 	cursor: pointer;
+// 	overflow: hidden;
+// 	width: 100%;
+// 	margin: 1em 0;
+// 	padding: 0.5em;
+// 	color: $white;
+// 	background: $purple;
+// 	-webkit-transition: all 0.3s ease;
+// 	-moz-transition: all 0.3s ease;
+// 	transition: all 0.3s ease;
+// }
+/* A fancy button - http://codepen.io/andywillekens/pen/ogaLeR */
+// Submit Button
+.ahoy input#submit {
+	font-size: 2em;
+	font-weight: 300;
+	letter-spacing: 2px;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	cursor: pointer;
+	color: $purple;
+	background-color: transparent;
+	border: 1px solid $purple;
+	padding: .5em;
+	margin: 1.5em 0 1em;
+	background-size: 200% 100%;
+	background-image: linear-gradient(to right, transparent 50%, $purple 50%);
+	transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
+}
+// Submit Button Hover
+.ahoy input#submit:hover {
+	color: $yellow;
+	background-color: $purple;
+	background-position: -100% 100%;
+}
+// Reset Button
+.ahoy input#reset {
+	font-size: 1.5em;
+	font-weight: 300;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	color: $gray;
+	background-color: transparent;
+	border: 1px solid $gray;
+	padding: .5em;
+	margin: 1em 0;
+	background-size: 200% 100%;
+	background-image: linear-gradient(to right, transparent 50%, $gray 50%);
+	transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
+}
+// Reset Button Hover
+.ahoy input#reset:hover {
+	color: $black1;
+	background-color: $gray;
+	background-position: -100% 100%;
+}
+// input, textarea type style
+.ahoy input#name, input#email, textarea {
+	font: 300 1.4em/1.6em $roboto;
+	color: $black1;
+	letter-spacing: -0.2px;
+}
+// input box
+.ahoy input#name, input#email {
+	width: 100%;
+	border: 1px solid $lightgray;
+	padding: .5em;
+	height: 2em;
+}
+// textarea box
+.ahoy textarea#message {
+	width: 100%;
+	border: 1px solid $lightgray;
+	padding: .5em;
+	height: 12em;
+	resize: none;
+}
+// textarea box-shadow fix
+.ahoy textarea#message:focus {
+	box-shadow: 0;
+}
+// input, textarea :focus style
+.ahoy input#name:focus, input#email:focus, textarea#message:focus {
+	outline: none;
+	border: 1px solid $black1;
+}
+/* ----------------------------------------------------- */
+/* # FOLIO */
+/* ----------------------------------------------------- */
+/* ## FOLIO - TYPE */
+/* ----------------------------------------------------- */
+/* ### FOLIO - TYPE - h1 Post Title */
+/* ----------------------------------------------------- */
+
+/* ----------------------------------------------------- */
+/* # FOOTER */
+/* ----------------------------------------------------- */
+/* ## FOOTER - Global */
+/* ----------------------------------------------------- */
+.footer {
+	padding: 50px 0;
+}
+.footer container {
+	padding: 15px 0;
+	margin: 15px 0;
+}
+.footer {
+	color: $lightgray;
+	background-color: $black1;
+}
+.footer h2 {
+	color: $gray;
+	font-size: 2em;
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+.footer p {
+	color: $lightgray;
+	margin-bottom: 15px;
+}
+.footer > hr {
+	border-top-color: #d5d5d5;
+}
+
+/* ----------------------------------------------------- */
+/* ## FOOTER - Copyright */
+/* ----------------------------------------------------- */
+aside.copyright {
+	color: $gray;
+}
+aside.copyright a {
+	color: $lightgray;
+	border-bottom: none;
+}
+aside.copyright a:hover {
+	color: $yellow;
+}
+aside.copyright a:after {
+	background: $lightgray;
+}
+aside.copyright a:hover:before {
+	background: $yellow;
+}
+/* ----------------------------------------------------- */
+/* # FIXES */
+/* ----------------------------------------------------- */
+ol ol, ol ul, ul ol, ul ul { // type.less
+    margin-bottom: 0;
+    display: inherit;
+}

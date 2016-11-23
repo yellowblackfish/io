@@ -1,0 +1,38 @@
+{{ partial "head" . }}
+
+<main id="panel" class="slideout-panel">
+	<!-- Jumbo Welcome -->
+	<div class="jumbotron" style="background: url(https://s-media-cache-ak0.pinimg.com/originals/93/80/7c/93807c60355cb41e2cabc28ce19cf50d.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+		<div class="jumbocolor">
+			<div class="container">
+					<div class="col-md-12 col-md-offset-6">
+						<div class="jumboblock">
+							{{ range where .Site.Pages "Type" "=" "index" }} {{ .Content }} {{ end }}
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+	<!-- 3 Boxes -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4">
+				{{ range where .Site.Pages "Type" "=" "index1" }} {{ .Content }} {{ end }}
+			</div>
+			<div class="col-lg-4">
+				{{ range where .Site.Pages "Type" "=" "index2" }} {{ .Content }} {{ end }}
+			</div>
+			<div class="col-lg-4">
+				{{ range where .Site.Pages "Type" "=" "index3" }} {{ .Content }} {{ end }}
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			{{ partial "footer" . }}
+		</div>
+	</footer>
+</main>
+
+{{ partial "footer_js" . }}
