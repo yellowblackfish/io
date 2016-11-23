@@ -1,5 +1,11 @@
 # Changelog
 
+## 20161123 10:34AM
+#### Merged develop with master
+- Merged the dev branch into the master branch
+
+---
+
 ## 20161123 10:23AM
 #### Added ybf-0.1.0 theme to develop repo
 - Commited ybf-0.1.0 to dev repo branch.
